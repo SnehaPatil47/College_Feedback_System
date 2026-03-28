@@ -5,7 +5,7 @@ const AuthContext = createContext();
 export const useAuth = () => useContext(AuthContext);
 
 // ✅ Fix 1: Set baseURL and token BEFORE component mounts
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 const savedToken = localStorage.getItem('token');
 if (savedToken) {
