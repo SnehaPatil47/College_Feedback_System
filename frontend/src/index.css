@@ -54,3 +54,142 @@ h1,h2,h3,h4,h5 { font-family: 'Poppins', sans-serif; }
   100% { background-position: 1000px 0; }
 }
 .animate-in { animation: fadeIn .4s ease both; }
+
+/* ========================================
+   RESPONSIVE STYLES
+   ======================================== */
+
+/* Tablet */
+@media (max-width: 900px) {
+  /* Stat grids — 2 columns */
+  .stat-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Chart grids stack */
+  .chart-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  /* Sidebar collapses to bottom nav */
+  .sidebar-layout {
+    flex-direction: column !important;
+  }
+
+  /* Main content fills screen */
+  .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Topbar */
+  .topbar {
+    padding: 0 16px !important;
+  }
+
+  .topbar h1 {
+    font-size: 16px !important;
+  }
+
+  /* Main padding */
+  .page-main {
+    padding: 16px !important;
+  }
+
+  /* Stat cards 1 column */
+  .stat-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Tables scroll */
+  .table-wrap {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  table {
+    min-width: 500px;
+    font-size: 12px !important;
+  }
+
+  td, th {
+    padding: 8px 10px !important;
+    white-space: nowrap;
+  }
+
+  /* Login page */
+  .login-card {
+    padding: 28px 18px !important;
+    margin: 20px !important;
+  }
+
+  /* Role tabs 2x2 grid */
+  .role-tabs {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Cards full width */
+  .card-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Step indicator vertical */
+  .step-indicator {
+    flex-direction: column !important;
+  }
+
+  /* Hero banner */
+  .hero-banner {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 20px !important;
+  }
+
+  .hero-banner button {
+    width: 100% !important;
+    margin-top: 16px !important;
+  }
+
+  /* Feedback cards */
+  .feedback-card-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  /* Modal full screen */
+  .modal-box {
+    width: 95% !important;
+    padding: 24px 18px !important;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  /* Toolbar wrap */
+  .toolbar {
+    flex-wrap: wrap !important;
+  }
+
+  .toolbar input {
+    width: 100% !important;
+    min-width: unset !important;
+  }
+
+  /* Profile cards */
+  .profile-info-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Charts */
+  canvas {
+    max-width: 100% !important;
+  }
+
+  /* Typography */
+  h1 { font-size: 20px !important; }
+  h2 { font-size: 17px !important; }
+  h3 { font-size: 15px !important; }
+}
