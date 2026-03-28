@@ -1,0 +1,70 @@
+# ===========================
+# Dependencies
+# ===========================
+node_modules/
+*/node_modules/
+**/node_modules/
+
+# ===========================
+# Environment Variables
+# ===========================
+.env
+.env.local
+.env.development
+.env.production
+*/.env
+**/.env
+
+# ===========================
+# Build Output
+# ===========================
+frontend/build/
+build/
+dist/
+
+# ===========================
+# Logs
+# ===========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+
+# ===========================
+# OS Files
+# ===========================
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ===========================
+# IDE / Editor
+# ===========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ===========================
+# React
+# ===========================
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# ===========================
+# Misc
+# ===========================
+.cache/
+coverage/
+*.zip
+
+echo "backend/{" >> .gitignore
+echo "frontend/cls" >> .gitignore
+echo "frontend/curl" >> .gitignore
